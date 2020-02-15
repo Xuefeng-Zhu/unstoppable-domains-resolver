@@ -1,11 +1,7 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Test
+# Unstoppable Domains Resolver
 
-My Chrome Extension
+A chrome extention for unstoppable domains resolution
 
-## Features
-
-- Feature 1
-- Feature 2
 
 ## Install
 
