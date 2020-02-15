@@ -1,7 +1,17 @@
-# IPFS Snap Example
+# <img src="public/icons/icon_48.png" width="45" align="left"> Test
 
-To run: install the `snap` utility by installing with `npm i -g ../../` from this folder.
+My Chrome Extension
 
-Then run `snap serve` from this folder.
+## Features
 
-Make sure you're running the [Snaps beta branch](https://github.com/MetaMask/metamask-snaps-beta) of MetaMask.
+- Feature 1
+- Feature 2
+
+## Install
+
+[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+
+## Contribution
+
+Suggestions and pull requests are welcomed!.
+

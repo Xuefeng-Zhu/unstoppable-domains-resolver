@@ -1,27 +1,20 @@
 {
-  "name": "ipfs-snap",
-  "version": "1.0.0",
-  "description": "An IPFS Snap for MetaMask",
-  "main": "index.js",
-  "dependencies": {
-    "eth-json-rpc-errors": "^1.1.0",
-    "ipfs-mini": "^1.1.5"
-  },
-  "devDependencies": {},
+  "name": "test",
+  "version": "0.1.0",
+  "description": "My Chrome Extension",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --mode=development --watch --config config/webpack.config.js",
+    "build": "webpack --mode=production --config config/webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MetaMask/snaps-cli.git"
-  },
-  "web3Wallet": {
-    "bundle": {
-      "local": "dist/bundle.js",
-      "url": "http://localhost:8086/dist/bundle.js"
-    },
-    "initialPermissions": {}
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "size-plugin": "^2.0.1",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   }
 }
