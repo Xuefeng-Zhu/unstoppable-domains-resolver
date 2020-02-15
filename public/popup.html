@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>My Chrome Extension</title>
     <link rel="stylesheet" href="popup.css" />
-</head>
-<body>
-  <div class="app">
-    <p class="counter-label">Counter</p>
-    <div id="counter" class="counter"></div>
-    <div class="button-container">
-      <button id="decrementBtn" class="button">-</button>
-      <button id="incrementBtn" class="button">+</button>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h4>Unstoppable Domain</h4>
+      <div id="resolve-block">
+        <input
+          type="text"
+          id="domain"
+          class="form-control"
+          placeholder="Domain"
+          aria-label="Domain"
+        />
+        <input
+          type="text"
+          id="currency"
+          class="form-control"
+          placeholder="Currency"
+          aria-label="Currency"
+        />
+        <button id="resolveBtn" class="btn btn-primary">Resolve</button>
+      </div>
+      <div id="result-block">
+        <div class="input-group mb-3">
+          <input id="result" class="form-control" readonly value="" />
+          <div class="input-group-append">
+            <button
+              class="btn btn-sm btn-outline-secondary"
+              id="result-copy"
+              data-clipboard-target="#result"
+            >
+              <i class="fa fa-files-o" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <hr class="divider" />
+    <script src="popup.js"></script>
 
-    <p class="title">Chrome Extension is Ready!</p>
-    <p class="subtitle">Start by updating <code>popup.html</code></p>
-  </div>
-
-  <script src="popup.js"></script>
-
-  <!--
+    <!--
     This HTML file opens when you click on icon from the toolbar.
 
     To begin the development, run `npm run watch`.
     To create a production bundle, use `npm run build`.
-  -->
-</body>
+  --></body>
 </html>
